@@ -23,22 +23,21 @@ const tagsArray = Object.values(TAGS);
 ---
 
 <Container id="skills">
-  
-    <h2 class="text-5xl mb-16">
-      <span class="text-mainGreen">skills</span>( )
-    </h2>
-  
-    <div class="flex justify-evenly">
-      {
-        tagsArray.map((tag) => (
-          <span class="space-y-1.5">
-            <tag.icon class={`mx-auto size-16`} />
-            <h2 class="text-center text-xl font-semibold">{tag.name}</h2>
-          </span>
-        ))
-      }
-    </div>
-    <div>
-      <Projects tags={TAGS} />
-    </div>
+  <h2 class="mb-16 text-5xl">
+    <span class="text-mainGreen">skills</span>( )
+  </h2>
+
+  <div class="flex justify-evenly">
+    {
+      tagsArray.map((tag) => (
+        <span class="space-y-1.5">
+          <tag.icon class={`mx-auto size-16`} />
+          <h2 class="text-center text-xl font-semibold">{tag.name}</h2>
+        </span>
+      ))
+    }
+  </div>
+  <div>
+    <Projects tags={TAGS} />
+  </div>
 </Container>
