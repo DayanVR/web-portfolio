@@ -1,25 +1,28 @@
 ---
-
+import Container from "./Container.astro";
 ---
 
-<article
-  id="self-intro"
-  class="flex items-center justify-between pt-10 max-lg:flex-col lg:pt-20"
->
-  <div class="flex-col items-center space-y-2 max-lg:flex">
-    <span class="text-3xl font-bold opacity-60">Hello, I'm</span>
-    <h1 class="font-semibold md:text-4xl lg:max-w-96 lg:text-7xl">
-      <span class="text-mainGreen">{"< Dayan Villavicencio Rolffot />"}</span>
-    </h1>
+<Container id="self-intro">
+  <div class="mt-1">
+    <div class="flex items-center justify-between max-lg:flex-col">
+      <div class="flex-col items-center space-y-2 max-lg:flex">
+        <span class="text-3xl font-bold opacity-60">Hello, I'm</span>
+        <h1 class="font-semibold md:text-4xl lg:max-w-96 lg:text-7xl">
+          <span class="text-mainGreen"
+            >{"< Dayan Villavicencio Rolffot />"}</span
+          >
+        </h1>
 
-    <h2 class="py-4 lg:text-5xl">Frontend Developer</h2>
+        <h2 class="py-4 lg:text-5xl">Frontend Developer</h2>
+      </div>
+
+      <picture class="flex items-center">
+        <img
+          src="/dayanvr.jpg"
+          class="rounded-full border-2 border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45"
+          alt="Picture of myself"
+        />
+      </picture>
+    </div>
   </div>
-
-  <picture class="flex items-center">
-    <img
-      src="/dayanvr.jpg"
-      class="rounded-full border-2 border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45"
-      alt="Picture of myself"
-    />
-  </picture>
-</article>
+</Container>

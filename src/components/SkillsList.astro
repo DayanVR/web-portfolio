@@ -1,7 +1,44 @@
 ---
+import React from "./icons/React.astro";
+import AstroBrand from "./icons/AstroBrand.astro";
+import Css from "./icons/Css.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Html from "./icons/Html.astro";
+import Javascript from "./icons/Javascript.astro";
+import Github from "./icons/Github.astro";
+import Projects from "./Projects.astro";
+import Container from "./Container.astro";
 
+// class: "size-10",
+const TAGS = {
+  HTML: { name: "HTML", icon: Html },
+  CSS: { name: "CSS", icon: Css },
+  JAVACRIPTS: { name: "JavaScript", icon: Javascript },
+  TAILWIND: { name: "Tailwind CSS", icon: Tailwind },
+  REACT: { name: "React", icon: React },
+  ASTRO: { name: "Astro", icon: AstroBrand },
+  GIT: { name: "GitHub", icon: Github },
+};
+const tagsArray = Object.values(TAGS);
 ---
 
-<h2 class="text-5xl">
-  <span class="text-mainGreen">skills</span>()
-</h2>
+<Container id="skills">
+  
+    <h2 class="text-5xl mb-16">
+      <span class="text-mainGreen">skills</span>( )
+    </h2>
+  
+    <div class="flex justify-evenly">
+      {
+        tagsArray.map((tag) => (
+          <span class="space-y-1.5">
+            <tag.icon class={`mx-auto size-16`} />
+            <h2 class="text-center text-xl font-semibold">{tag.name}</h2>
+          </span>
+        ))
+      }
+    </div>
+    <div>
+      <Projects tags={TAGS} />
+    </div>
+</Container>
