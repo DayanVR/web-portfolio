@@ -1,0 +1,26 @@
+---
+const { target, href } = Astro.props;
+const classStyle = Astro.props.class;
+---
+
+<div
+  class={`${classStyle} hover:scale-110 flex items-center transition rounded-lg hover:bg-gray-400/15`}
+>
+  <a
+    target={target}
+    href={href}
+    class:list={[
+      "flex w-full items-center gap-1 rounded-lg px-3 py-1 [&_svg]:size-6",
+      {
+        "hover:text-mainGreen/85": !classStyle,
+      },
+    ]}
+    ,><slot name="icon" /> <slot /></a
+  >
+</div>
+
+<!-- <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded p-1">
+    <span class="flex w-full bg-gray-900 text-white rounded p-2">
+    Gradient border
+       </span>
+  </button> -->

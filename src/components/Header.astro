@@ -1,0 +1,39 @@
+---
+import HeaderLinks from "./HeaderLinks.astro";
+import Linkedin from "./icons/Linkedin.astro";
+import Github from "./icons/Github.astro";
+import Email from "./icons/Email.astro";
+---
+
+<header class="flex items-center justify-between">
+  <h2 class="text-3xl font-semibold text-mainGreen">
+    <span class="text-white opacity-60">Dayan</span>VR
+  </h2>
+
+  <nav class="flex gap-5 text-2xl font-medium">
+    <HeaderLinks href="#projects"> Projects </HeaderLinks>
+    <HeaderLinks href="#skills"> Skills </HeaderLinks>
+    <HeaderLinks href="#self-intro"> About </HeaderLinks>
+  </nav>
+  <nav class="flex gap-6 text-2xl font-medium">
+    <HeaderLinks
+      target="_blank"
+      href="https://www.linkedin.com/in/dayan-villavicencio-rolffot-6a652527a/"
+    >
+      <Linkedin name="icon" />
+      Linkedin
+    </HeaderLinks>
+    <HeaderLinks target="_blank" href="https://github.com/DayanVR">
+      <Github name="icon" />
+      Github
+    </HeaderLinks>
+    <HeaderLinks
+      target="_blank"
+      href="mailto:dayanvillavicencio13@gmail.com"
+      class="bg-gradient-to-br from-green-400 to-blue-600 p-1 hover:bg-gradient-to-bl focus:ring-green-200 dark:focus:ring-green-800"
+    >
+      <Email name="icon" />
+      Contact me
+    </HeaderLinks>
+  </nav>
+</header>
