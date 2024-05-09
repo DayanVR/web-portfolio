@@ -5,7 +5,10 @@ import Preview from "./icons/Preview.astro";
 import Terminal from "./icons/Terminal.astro";
 import Headings from "./util/Headings.astro";
 
-const { html, css, javascript, tailwind, react, astro, git } = TAGS;
+const { FRONTEND } = TAGS;
+const { TAILWIND: tailwind, REACT: react } = FRONTEND;
+const techArray = [tailwind, react];
+console.log(techArray)
 
 const PROJECTS = [
   {
@@ -15,7 +18,7 @@ const PROJECTS = [
     link: "https://gamefinderpro.netlify.app/",
     github: "https://github.com/DayanVR/game_finder_pro",
     image: "/projects/game-finder.webp",
-    tags: [react],
+    tags: techArray,
   },
   {
     title: "Space Multi-Page",
@@ -24,7 +27,7 @@ const PROJECTS = [
     link: "https://dayanvy-space-multi-page-website.netlify.app/",
     github: "https://github.com/DayanVR/space-multi-page-website",
     image: "/projects/space-multi.webp",
-    tags: [react],
+    tags: techArray,
   },
   {
     title: "Shortener Api",
@@ -33,7 +36,7 @@ const PROJECTS = [
     link: "https://dayanvr-shortapi.netlify.app/",
     github: "https://github.com/DayanVR/Short_API",
     image: "/projects/short-api.webp",
-    tags: [react],
+    tags: techArray,
   },
   {
     title: "Countries Api",
@@ -42,7 +45,7 @@ const PROJECTS = [
     link: "https://dayanvr-restcountriesapi.netlify.app/",
     github: "https://github.com/DayanVR/rest_country_api",
     image: "/projects/countries-api.webp",
-    tags: [react],
+    tags: techArray,
   },
 ];
 ---
@@ -50,20 +53,31 @@ const PROJECTS = [
 <Container id="projects">
   <Headings><span>projects</span>( )</Headings>
 
-  <div class="grid md:grid-cols-2 justify-items-center gap-10">
+  <div class="grid justify-items-center gap-10 md:grid-cols-2">
     {
       PROJECTS.map((project) => (
         <div class="">
           <img
-            class="rounded-t-xl w-full h-auto"
+            class="h-auto w-full rounded-t-xl"
             src={project.image}
             alt={`${project.title} image`}
           />
 
-          <div class="flex flex-col space-y-3 rounded-b-xl bg-blue-950/20 p-2.5 ">
-            <h1 class="text-3xl text-mainGreen/90 font-medium">{project.title}</h1>
+          <div class="flex flex-col space-y-3 pb-4 rounded-b-xl bg-blue-950/20 p-2.5 ">
+            <div class="flex max-sm:flex-col justify-between xl:justify-evenly max-sm:text-center">
+              <h1 class="text-3xl font-medium text-mainGreen/90">
+                {project.title}
+              </h1>
+
+              <div class="flex items-center max-sm:mx-auto max-sm:my-2 justify-evenly w-32 md:w-16 lg:w-28 xl:w-40">
+              {project.tags.map((tag) => (
+                  <tag.icon class="size-10"/>
+                ))}
+                </div>
+            </div>
+            
             <div class="flex justify-evenly [&_a]:w-fit ">
-              <span class="w-full rounded-l-md py-2 text-center text-xl">
+              <span class="w-full rounded-l-md py-2 text-center text-xl md:text-2xl">
                 <a
                   class="mx-auto flex items-center gap-1.5 text-center transition hover:scale-110 hover:text-mainGreen"
                   target="_blank"
@@ -74,7 +88,7 @@ const PROJECTS = [
                 </a>
               </span>
               <span class="border-x-2 border-mainGreen/55" />
-              <span class="w-full rounded-r-md py-2 text-xl">
+              <span class="w-full rounded-r-md py-2 text-xl md:text-2xl">
                 <a
                   class="mx-auto flex items-center gap-1.5 text-center transition hover:scale-110 hover:text-mainGreen "
                   target="_blank"
@@ -85,7 +99,9 @@ const PROJECTS = [
                 </a>
               </span>
             </div>
-            <p class="mx-2 text-pretty font-semibold line-clamp-6">{project.description}</p>
+            <p class="mx-2 line-clamp-5 pt-1 text-pretty font-semibold">
+              {project.description}
+            </p>
           </div>
         </div>
       ))
