@@ -1,2 +1,2 @@
 DayanVR Web Portfolio
-Lookin for job
+Lookin for job Try and error
