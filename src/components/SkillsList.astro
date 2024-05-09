@@ -12,19 +12,23 @@ const extraTagsArray = Object.values(extraTags);
 <Container id="skills">
   <Headings class="max-sm:text-4xl"><span>tecnologies</span>( )</Headings>
 
-  <div class="-mx-10 flex justify-around max-xl:flex-col max-xl:space-y-10">
+  <div class="mx-0 flex justify-around max-xl:flex-col max-xl:space-y-10">
     <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
     >
-      <Headings><span>frontend</span>[ ] </Headings>
+      <h2
+        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+      >
+        <span>frontend</span>[ ]
+      </h2>
       <div
-        class="grid grid-flow-col grid-rows-2 gap-y-10 px-10 xl:mx-4 xl:grid-rows-2 xl:px-0"
+        class="grid grid-flow-col grid-rows-2 gap-y-10 px-10 xl:mx-2 xl:grid-rows-2 xl:px-0"
       >
         {
           frontendArray.map((tag) => (
             <span class="space-y-2">
               <tag.icon class={`mx-auto size-12`} />
-              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl">
                 {tag.name}
               </h2>
             </span>
@@ -34,9 +38,13 @@ const extraTagsArray = Object.values(extraTags);
     </div>
 
     <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
     >
-      <Headings><span>tools</span>[ ] </Headings>
+      <h2
+        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+      >
+        <span>tools</span>[ ]
+      </h2>
       <div
         class="grid grid-flow-col grid-rows-2 gap-y-8 px-10 xl:mx-6 xl:px-0 2xl:grid-cols-2"
       >
@@ -44,7 +52,7 @@ const extraTagsArray = Object.values(extraTags);
           toolsArray.map((tag) => (
             <span class="space-y-2">
               <tag.icon class={`mx-auto size-12`} />
-              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl">
                 {tag.name}
               </h2>
             </span>
@@ -53,9 +61,13 @@ const extraTagsArray = Object.values(extraTags);
       </div>
     </div>
     <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
     >
-      <Headings><span>learning</span>[ ] </Headings>
+      <h2
+        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+      >
+        <span>learning</span>[ ]
+      </h2>
       <div
         class="grid-flow-rows grid grid-rows-2 gap-y-8 px-10 xl:mx-6 xl:px-0"
       >
@@ -63,7 +75,7 @@ const extraTagsArray = Object.values(extraTags);
           learningArray.map((tag) => (
             <span class="space-y-2">
               <tag.icon class={`mx-auto size-12`} />
-              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl">
                 {tag.name}
               </h2>
             </span>
