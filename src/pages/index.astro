@@ -1,12 +1,16 @@
 ---
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
 import SelfIntro from "../components/SelfIntro.astro";
 import SkillsList from "../components/SkillsList.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="DayanVR Portfolio">
-  <div class="mx-10 space-y-0 lg:mx-28 xl:mx-36">
+  <div class="max-lg:px-6 pb-20 max-lg:md:pt-10 lg:mx-28 xl:mx-44">
     <SelfIntro />
+    <Projects />
     <SkillsList />
+    <About />
   </div>
 </Layout>

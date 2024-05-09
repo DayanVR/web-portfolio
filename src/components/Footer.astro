@@ -1,0 +1,26 @@
+---
+import Github from "./icons/Github.astro";
+import Linkedin from "./icons/Linkedin.astro";
+---
+
+<footer class="container mx-auto h-24">
+  <div class="flex max-md:flex-col max-xl:space-y-3 items-center justify-evenly">
+    <p class="flex items-center gap-1 sm:gap-1.5 lg:gap-2 text-base sm:text-3xl lg:text-4xl">
+      <span class="text-lg sm:text-4xl lg:text-5xl text-mainGreen">Email:</span>
+      <a href="mailto:dayanvillavicencio13@gmail.com" target="_blank" >dayanvillavicencio13@gmail.com</a>
+      
+    </p>
+
+    <div class="flex w-40 lg:w-60 items-center justify-evenly">
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/dayan-villavicencio-rolffot-6a652527a/"
+      >
+        <Linkedin aria-label="Review my Linkedin profile" class="hover:scale-110 size-10 transition" />
+      </a>
+      <a class="" target="_blank" href="https://github.com/DayanVR">
+        <Github aria-label="Review my GitHub page" class="hover:scale-110 size-10 transition" />
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,53 @@
+---
+import Container from "./util/Container.astro";
+import Timeline from "./Timeline.astro";
+import Headings from "./util/Headings.astro";
+---
+
+<Container id="about">
+  <Headings><span>about me</span>( )</Headings>
+  <div
+    class="flex flex-col justify-between max-lg:space-y-8 lg:flex-row-reverse lg:items-center"
+  >
+    <picture class="max-xl:mx-auto">
+      <img
+        src="/dayanvr.jpg"
+        class="size-60 rounded-full border-2 border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45 md:size-72 xl:size-80 2xl:size-96"
+        alt="Picture of myself"
+      />
+    </picture>
+
+    <article class="xl:text-xl lg:max-w-lg space-y-4 text-lg xl:max-w-xl">
+      <p class="text-pretty text-start max-2xl:lg:mr-14">
+        My full name is <strong class="font-bold text-mainGreen"
+          >Dayan Villavicencio Rolffot</strong
+        >, often shortened to DayanVR for convenience. Originally from the
+        Dominican Republic, I have resided in the United States for the past six
+        years. During my time here, I spent three years in Texas completing my
+        high school education. Subsequently, I relocated to Lynn, Massachusetts,
+        where I pursued my college education.
+      </p>
+
+      <p class="text-pretty text-start max-2xl:lg:mr-14">
+        My passion for programming grew from a childhood love for computers.
+        While I initially explored app and game development, it was <strong
+          class="font-bold text-mainGreen">web development</strong
+        >
+        that captivated me with its endless potential and rich learning opportunities.
+        This journey solidified my dedication to excel in web development, where
+        I aim to create meaningful digital experiences.
+      </p>
+
+      <p class="text-pretty text-start max-2xl:lg:mr-14">
+        I graduated from <strong class="font-bold text-mainGreen"
+          >North Shore Community College</strong
+        > with a major in Computer Science. Throughout my studies, I delved into
+        coursework related to technology and programming, which provided me with
+        a foundation in computer science principles, various programming languages,
+        and effective problem-solving techniques.
+      </p>
+    </article>
+  </div>
+</Container>
+
+<Timeline />

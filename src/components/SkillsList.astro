@@ -1,43 +1,86 @@
 ---
-import React from "./icons/React.astro";
-import AstroBrand from "./icons/AstroBrand.astro";
-import Css from "./icons/Css.astro";
-import Tailwind from "./icons/Tailwind.astro";
-import Html from "./icons/Html.astro";
-import Javascript from "./icons/Javascript.astro";
-import Github from "./icons/Github.astro";
-import Projects from "./Projects.astro";
-import Container from "./Container.astro";
+import Container from "./util/Container.astro";
+import { TAGS, extraTags } from "./constants/Constants";
+import Headings from "./util/Headings.astro";
 
-// class: "size-10",
-const TAGS = {
-  HTML: { name: "HTML", icon: Html },
-  CSS: { name: "CSS", icon: Css },
-  JAVACRIPTS: { name: "JavaScript", icon: Javascript },
-  TAILWIND: { name: "Tailwind CSS", icon: Tailwind },
-  REACT: { name: "React", icon: React },
-  ASTRO: { name: "Astro", icon: AstroBrand },
-  GIT: { name: "GitHub", icon: Github },
-};
-const tagsArray = Object.values(TAGS);
+const frontendArray = Object.values(TAGS.FRONTEND);
+const toolsArray = Object.values(TAGS.TOOLS);
+const learningArray = Object.values(TAGS.LEARNING);
+const extraTagsArray = Object.values(extraTags);
 ---
 
 <Container id="skills">
-  <h2 class="mb-16 text-5xl">
-    <span class="text-mainGreen">skills</span>( )
-  </h2>
+  <Headings class="max-sm:text-4xl"><span>tecnologies</span>( )</Headings>
 
-  <div class="flex justify-evenly">
+  <div class="-mx-10 flex justify-around max-xl:flex-col max-xl:space-y-10">
+    <div
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+    >
+      <Headings><span>frontend</span>[ ] </Headings>
+      <div
+        class="grid grid-flow-col grid-rows-2 gap-y-10 px-10 xl:mx-4 xl:grid-rows-2 xl:px-0"
+      >
+        {
+          frontendArray.map((tag) => (
+            <span class="space-y-2">
+              <tag.icon class={`mx-auto size-12`} />
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+                {tag.name}
+              </h2>
+            </span>
+          ))
+        }
+      </div>
+    </div>
+
+    <div
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+    >
+      <Headings><span>tools</span>[ ] </Headings>
+      <div
+        class="grid grid-flow-col grid-rows-2 gap-y-8 px-10 xl:mx-6 xl:px-0 2xl:grid-cols-2"
+      >
+        {
+          toolsArray.map((tag) => (
+            <span class="space-y-2">
+              <tag.icon class={`mx-auto size-12`} />
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+                {tag.name}
+              </h2>
+            </span>
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 max-sm:mx-10 sm:mx-32 md:mx-56 xl:mx-0 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+    >
+      <Headings><span>learning</span>[ ] </Headings>
+      <div
+        class="grid-flow-rows grid grid-rows-2 gap-y-8 px-10 xl:mx-6 xl:px-0"
+      >
+        {
+          learningArray.map((tag) => (
+            <span class="space-y-2">
+              <tag.icon class={`mx-auto size-12`} />
+              <h2 class="text-center font-semibold opacity-65 sm:text-xl xl:text-2xl">
+                {tag.name}
+              </h2>
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <Headings class="my-16">
+    <span>skills</span>( )
+  </Headings>
+  <ul class="flex justify-evenly gap-5 max-md:flex-col">
     {
-      tagsArray.map((tag) => (
-        <span class="space-y-1.5">
-          <tag.icon class={`mx-auto size-16`} />
-          <h2 class="text-center text-xl font-semibold">{tag.name}</h2>
-        </span>
+      extraTagsArray.map((tag) => (
+        <li class="text-2xl opacity-75 xl:text-4xl">{tag}</li>
       ))
     }
-  </div>
-  <div>
-    <Projects tags={TAGS} />
-  </div>
+  </ul>
 </Container>

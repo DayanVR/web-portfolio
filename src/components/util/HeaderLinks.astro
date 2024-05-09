@@ -10,7 +10,7 @@ const classStyle = Astro.props.class;
     target={target}
     href={href}
     class:list={[
-      "flex w-full items-center gap-1 rounded-lg px-3 py-1 [&_svg]:size-6",
+      "flex w-full items-center gap-1 lg:gap-2 rounded-lg px-1 lg:px-3 py-1 [&_svg]:size-6",
       {
         "hover:text-mainGreen/85": !classStyle,
       },

@@ -1,24 +1,24 @@
 ---
-import Container from "./Container.astro";
+import Container from "./util/Container.astro";
 ---
 
 <Container id="self-intro">
     <div class="flex items-center justify-between max-lg:flex-col">
       <div class="flex-col items-center space-y-2 max-lg:flex">
-        <span class="text-3xl font-bold opacity-60">Hello, I'm</span>
-        <h1 class="font-semibold md:text-4xl lg:max-w-96 lg:text-7xl">
-          <span class="text-mainGreen"
+        <span class="md:text-3xl text-md sm:text-2xl 2xl:text-4xl font-bold opacity-60">Hello, I'm</span>
+        <h1 class="font-semibold md:text-4xl text-balance lg:max-w-96 lg:text-7xl">
+          <span class="text-mainGreen sm:text-3xl lg:text-5xl 2xl:text-6xl text-lg"
             >{"< Dayan Villavicencio Rolffot />"}</span
           >
         </h1>
 
-        <h2 class="py-4 lg:text-5xl">Frontend Developer</h2>
+        <h2 class=" sm:text-2xl text-white/85 md:py-3 lg:text-4xl 2xl:text-5xl text-lg font-semibold">Frontend Developer</h2>
       </div>
 
       <picture class="flex items-center">
         <img
-          src="/dayanvr.jpg"
-          class="rounded-full border-2 border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45"
+          src="/pixlr-img.webp"
+          class="rounded-full border-2 size-60 max-lg:mt-6 sm:size-80 2xl:size-96 border-violet-600/60 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-violet-600/75"
           alt="Picture of myself"
         />
       </picture>
