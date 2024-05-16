@@ -4,21 +4,33 @@ import Linkedin from "./icons/Linkedin.astro";
 ---
 
 <footer class="container mx-auto h-24">
-  <div class="flex max-md:flex-col max-xl:space-y-3 items-center justify-evenly">
-    <p class="flex items-center gap-1 sm:gap-1.5 lg:gap-2 text-base sm:text-3xl lg:text-4xl">
-      <span class="text-lg sm:text-4xl lg:text-5xl text-mainGreen">Email:</span>
-      <a href="mailto:dayanvillavicencio13@gmail.com" target="_blank" >dayanvillavicencio13@gmail.com</a>
+  <div
+    class="flex items-center justify-evenly max-xl:space-y-3 max-md:flex-col"
+  >
+    <p
+      class="flex items-center gap-1 text-base sm:gap-1.5 sm:text-3xl lg:gap-2 lg:text-4xl"
+    >
+      <span class="text-lg text-mainGreen sm:text-4xl lg:text-5xl">Email:</span>
+      <a href="mailto:dayanvillavicencio13@gmail.com" target="_blank"
+        >dayanvillavicencio13@gmail.com</a
+      >
     </p>
 
-    <div class="flex w-40 lg:w-60 items-center justify-evenly">
+    <div class="flex w-40 items-center justify-evenly lg:w-60">
       <a
         target="_blank"
         href="https://www.linkedin.com/in/dayan-villavicencio-rolffot-6a652527a/"
       >
-        <Linkedin aria-label="Review my Linkedin profile" class="hover:scale-110 size-10 transition" />
+        <Linkedin
+          aria-label="Review my Linkedin profile"
+          class="size-10 transition hover:scale-110"
+        />
       </a>
       <a class="" target="_blank" href="https://github.com/DayanVR">
-        <Github aria-label="Review my GitHub page" class="hover:scale-110 size-10 transition" />
+        <Github
+          aria-label="Review my GitHub page"
+          class="size-10 transition hover:scale-110"
+        />
       </a>
     </div>
   </div>
