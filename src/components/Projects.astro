@@ -1,13 +1,16 @@
 ---
 import Container from "./util/Container.astro";
-import { TAGS } from "./constants/Constants";
+import { TAGS, } from "./constants/Constants";
 import Preview from "./icons/Preview.astro";
 import Terminal from "./icons/Terminal.astro";
 import Headings from "./util/Headings.astro";
 
-const { FRONTEND } = TAGS;
+
+const { FRONTEND, BACKEND } = TAGS;
 const { TAILWIND: tailwind, REACT: react } = FRONTEND;
+const { NODEJS: nodejs } = BACKEND; 
 const techArray = [tailwind, react];
+const techArrayBack = [tailwind, react, nodejs];
 console.log(techArray)
 
 const PROJECTS = [
@@ -18,7 +21,7 @@ const PROJECTS = [
     link: "https://gamefinderpro.netlify.app/",
     github: "https://github.com/DayanVR/game_finder_pro",
     image: "/projects/game-finder.webp",
-    tags: techArray,
+    tags: techArrayBack,
   },
   {
     title: "Space Multi-Page",
@@ -64,12 +67,12 @@ const PROJECTS = [
           />
 
           <div class="flex flex-col space-y-3 pb-4 rounded-b-xl bg-blue-950/20 p-2.5 ">
-            <div class="flex max-sm:flex-col justify-between xl:justify-evenly max-sm:text-center">
+            <div class="flex max-sm:flex-col justify-between max-sm:text-center">
               <h1 class="text-3xl font-medium text-mainGreen/90">
                 {project.title}
               </h1>
 
-              <div class="flex items-center max-sm:mx-auto max-sm:my-2 justify-evenly w-32 md:w-16 lg:w-28 xl:w-40">
+              <div class="flex items-center max-sm:mx-auto max-sm:my-2 justify-evenly w-40 md:w-16 lg:w-28 xl:w-40">
               {project.tags.map((tag) => (
                   <tag.icon class="size-10"/>
                 ))}

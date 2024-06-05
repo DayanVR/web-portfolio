@@ -10,6 +10,7 @@ import Typescript from "../icons/Typescript.astro";
 import Sass from "../icons/Sass.astro";
 import Npm from "../icons/Npm.astro";
 import Vscode from "../icons/Vscode.astro";
+import NodeJS from "../icons/NodeJS.astro";
 
 export const TAGS = {
   LEARNING: {
@@ -25,12 +26,17 @@ export const TAGS = {
   FRONTEND: {
     HTML: { name: "HTML", icon: Html },
     CSS: { name: "CSS", icon: Css },
-    JAVACRIPTS: { name: "JavaScript", icon: Javascript },
+    JAVASCRIPT: { name: "JavaScript", icon: Javascript },
     TAILWIND: { name: "Tailwind CSS", icon: Tailwind },
     REACT: { name: "React", icon: React },
     SASS: { name: "Sass", icon: Sass },
   },
+  BACKEND: {
+    NODEJS: {name: "NodeJS", icon: NodeJS },
+  },
 };
+
+
 
 export const extraTags = [
   "Responsive Design",
