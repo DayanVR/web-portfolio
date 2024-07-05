@@ -28,7 +28,7 @@ export const PROJECTS = [
   {
     title: "Shortener Api",
     description:
-      "I meticulously crafte the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
+      "I meticulously crafted the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
     link: "https://dayanvr-shortapi.netlify.app/",
     github: "https://github.com/DayanVR/Short_API",
     image: "/projects/short-api.webp",

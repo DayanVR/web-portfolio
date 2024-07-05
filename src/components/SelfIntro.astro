@@ -2,7 +2,7 @@
 import Container from "./util/Container.astro";
 ---
 
-<Container id="self-intro">
+<Container class='pt-0 sm:pt-4' id="self-intro">
     <div class="flex items-center justify-between max-lg:flex-col">
       <div class="flex-col items-center space-y-2 max-lg:flex">
         <span class="md:text-3xl text-md sm:text-2xl 2xl:text-4xl font-bold opacity-60">Hello, I'm</span>
@@ -16,11 +16,12 @@ import Container from "./util/Container.astro";
       </div>
 
       <picture class="flex items-center">
-        <img
-          src="/pixlr-img.webp"
-          class="rounded-full border-2 size-60 max-lg:mt-6 sm:size-80 2xl:size-96 border-violet-600/60 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-violet-600/75"
-          alt="Picture of myself"
-        />
+      <img
+        src="/dayanvr.jpg"
+        class=" border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45 rounded-full border-2 size-60 max-lg:mt-6 sm:size-80 2xl:size-96"
+        alt="Picture of myself"
+        
+      />
       </picture>
     </div>
 </Container>
