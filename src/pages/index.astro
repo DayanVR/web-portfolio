@@ -14,3 +14,21 @@ import Layout from "../layouts/Layout.astro";
     <About />
   </div>
 </Layout>
+
+<style is:global>
+  section, div {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 12%;
+  }
+  @keyframes reveal {
+    from{
+      opacity: 0;
+      translate: 0 40px;
+    }
+    to{
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+</style>
