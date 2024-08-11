@@ -42,7 +42,6 @@ export const extraTags = [
   "Responsive Design",
   "Teamwork",
   "SEO",
+  "WPO",
+  "Testing and Debugging",
 ];
-
-// "WPO",
-// "Testing and Debugging",
