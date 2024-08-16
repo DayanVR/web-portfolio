@@ -1,10 +1,12 @@
 import { TAGS } from "../constants/Constants";
 
-const { FRONTEND, BACKEND } = TAGS;
+const { FRONTEND, BACKEND, LEARNING } = TAGS;
 const { TAILWIND: tailwind, REACT: react } = FRONTEND;
 const { NODEJS: nodejs } = BACKEND;
+const { ASTRO: astro, TYPESCRIPT: typescript } = LEARNING;
 const techArray = [tailwind, react];
 const techArrayBack = [tailwind, react, nodejs];
+const astroTechArray = [astro, react, typescript];
 
 export const PROJECTS = [
   {
@@ -17,18 +19,18 @@ export const PROJECTS = [
     tags: techArrayBack,
   },
   {
-    title: "Space Multi-Page",
+    title: "Chefs Online",
     description:
-      "I completed a Frontend Mentor challenge, building a multi-page space website using Tailwind CSS and React. The site features space technologies, astronaut crews, and destinations, all managed with JSON for efficient data handling. It's a modern and interactive platform that showcases my frontend skills and data management expertise.",
-    link: "https://dayanvy-space-multi-page-website.netlify.app/",
-    github: "https://github.com/DayanVR/space-multi-page-website",
-    image: "/projects/space-multi.webp",
-    tags: techArray,
+    "This project uses React state management to filter a list of dishes and view detailed instructions and ingredients by clicking on each item. The filter persists across page changes, enhancing the search and selection experience with seamless and consistent access to comprehensive recipe information.",
+    link: "https://chefs-online.netlify.app/",
+    github: "https://github.com/DayanVR/recipes-online",
+    image: "/projects/chefs-online.webp",
+    tags: astroTechArray,
   },
   {
     title: "Shortener Api",
     description:
-      "I meticulously crafted the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
+    "I meticulously crafted the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
     link: "https://dayanvr-shortapi.netlify.app/",
     github: "https://github.com/DayanVR/Short_API",
     image: "/projects/short-api.webp",
@@ -37,7 +39,7 @@ export const PROJECTS = [
   {
     title: "Countries Api",
     description:
-      "I created a user-friendly website for exploring country information, using a template from Frontend Mentor challenges. Users can search, filter by region, and view detailed data with ease. The site includes a toggle dark mode for enhanced accessibility. It's designed to prioritize functionality and navigation ease, utilizing Tailwind CSS, Font Awesome icons, and Flowbite React components for a modern and efficient experience.",
+    "I created a user-friendly website for exploring country information, using a template from Frontend Mentor challenges. Users can search, filter by region, and view detailed data with ease. The site includes a toggle dark mode for enhanced accessibility. It's designed to prioritize functionality and navigation ease, utilizing Tailwind CSS, Font Awesome icons, and Flowbite React components for a modern and efficient experience.",
     link: "https://dayanvr-restcountriesapi.netlify.app/",
     github: "https://github.com/DayanVR/rest_country_api",
     image: "/projects/countries-api.webp",
@@ -46,3 +48,13 @@ export const PROJECTS = [
 ];
 
 export default PROJECTS;
+
+// {
+//   title: "Space Multi-Page",
+//   description:
+//     "I completed a Frontend Mentor challenge, building a multi-page space website using Tailwind CSS and React. The site features space technologies, astronaut crews, and destinations, all managed with JSON for efficient data handling. It's a modern and interactive platform that showcases my frontend skills and data management expertise.",
+//   link: "https://dayanvy-space-multi-page-website.netlify.app/",
+//   github: "https://github.com/DayanVR/space-multi-page-website",
+//   image: "/projects/space-multi.webp",
+//   tags: techArray,
+// },
