@@ -2,29 +2,44 @@
 import Container from "./util/Container.astro";
 ---
 
-<Container class='pt-0 sm:pt-4' id="self-intro">
-    <div class="flex items-center justify-between max-lg:flex-col">
-      <div class="flex-col items-center space-y-2 max-lg:flex">
-        <span class="md:text-3xl text-md sm:text-2xl 2xl:text-4xl font-bold opacity-60">Hello, I'm</span>
-        <h1 class="font-semibold md:text-4xl text-balance lg:max-w-96 lg:text-7xl">
-          <span class="text-mainGreen sm:text-3xl lg:text-5xl 2xl:text-6xl text-lg"
-            >{"< Dayan Villavicencio Rolffot />"}</span
-          >
-        </h1>
+<Container class="pt-0 sm:pt-4" id="self-intro">
+  <div class="flex items-center justify-between max-lg:flex-col">
+    <div class="flex-col items-center space-y-2 max-lg:flex">
+      <span
+        class="text-md font-bold opacity-60 sm:text-2xl md:text-3xl 2xl:text-4xl"
+        >Hello, I'm</span
+      >
+      <h1
+        class="text-balance font-semibold md:text-4xl lg:max-w-96 lg:text-7xl"
+      >
+        <span
+          class="text-lg text-mainGreen sm:text-3xl lg:text-5xl 2xl:text-6xl"
+          >{"< Dayan Villavicencio Rolffot />"}</span
+        >
+      </h1>
 
-        <h2 class=" sm:text-2xl text-white/85 md:py-3 lg:text-4xl 2xl:text-5xl text-lg font-semibold">Frontend Developer</h2>
-        <a class='text-violet-600 mt-2 text-xl md:text-2xl px-3 py-1 rounded-xl border-violet-600 border-2 hover:bg-violet-700 hover:text-white transition-colors duration-300 font-semibold' href="/assets/Dayan_Villavicencio_Rolffot_Resume.pdf" download>
+      <div class="flex flex-col max-lg:items-center">
+        <h2
+          class="text-lg font-semibold text-white/85 sm:text-2xl md:py-3 lg:text-4xl 2xl:text-5xl"
+        >
+          Frontend Developer
+        </h2>
+        <a
+          class="mt-2 w-fit rounded-xl border-2 border-violet-600 px-3 py-1 text-xl font-semibold text-violet-600 transition-colors duration-300 hover:bg-violet-700 hover:text-white md:text-2xl"
+          href="/assets/Dayan_Villavicencio_Rolffot_Resume.pdf"
+          download
+        >
           Download CV
         </a>
       </div>
+    </div>
 
-      <picture class="flex items-center">
+    <picture class="flex max-xl:mt-4 items-center">
       <img
         src="/dayanvr.jpg"
-        class=" border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45 rounded-full border-2 size-60 max-lg:mt-6 sm:size-80 2xl:size-96"
+        class="size-60 rounded-full border-2 border-mainGreen/35 shadow-[0_0px_50px_-15px_rgb(0,0,0,0.25)] shadow-mainGreen/45 max-lg:mt-6 sm:size-80 2xl:size-96"
         alt="Picture of myself"
-        
       />
-      </picture>
-    </div>
+    </picture>
+  </div>
 </Container>

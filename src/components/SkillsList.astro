@@ -12,9 +12,9 @@ const extraTagsArray = Object.values(extraTags);
 <Container id="skills">
   <Headings class="max-sm:text-4xl"><span>tecnologies</span>( )</Headings>
 
-  <div class="mx-0 flex justify-around max-xl:flex-col max-xl:space-y-10">
-    <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+  <div class="-mx-2 md:-mx-12 xl:-mx-0 flex justify-around max-xl:flex-col max-xl:space-y-10">
+    <section
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
         class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
@@ -35,10 +35,10 @@ const extraTagsArray = Object.values(extraTags);
           ))
         }
       </div>
-    </div>
+    </section>
 
-    <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+    <section
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
         class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
@@ -59,9 +59,9 @@ const extraTagsArray = Object.values(extraTags);
           ))
         }
       </div>
-    </div>
-    <div
-      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-[310px] 2xl:w-96 [&_h1]:text-center"
+    </section>
+    <section
+      class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
         class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
@@ -82,7 +82,7 @@ const extraTagsArray = Object.values(extraTags);
           ))
         }
       </div>
-    </div>
+    </section>
   </div>
 
   <Headings class="my-16">
@@ -91,7 +91,7 @@ const extraTagsArray = Object.values(extraTags);
   <ul class="flex justify-evenly gap-5 max-md:flex-col">
     {
       extraTagsArray.map((tag) => (
-        <li class="text-xl lg:text-2xl opacity-75 xl:text-3xl">{tag}</li>
+        <li class="text-xl opacity-75 lg:text-2xl xl:text-3xl">{tag}</li>
       ))
     }
   </ul>
