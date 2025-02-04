@@ -16,8 +16,6 @@ const translatedProjects = PROJECTS.map((project) => ({
   ...project,
   description: getTranslation(lang, project.descriptionKey),
 }));
-
-console.log(translatedProjects);
 ---
 
 <Container id="projects">
