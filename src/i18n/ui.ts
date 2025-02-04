@@ -16,5 +16,5 @@ export const ui: Record<keyof typeof languages, Translation> = {
 };
 
 export const getTranslation = (lang, key) => {
-  return ui[lang]?.projects[key] || key; // Devuelve la traducción o la clave si no se encuentra
+  return ui[lang]?.projects[key] || key;
 };
