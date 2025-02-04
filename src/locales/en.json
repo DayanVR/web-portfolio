@@ -1,0 +1,41 @@
+{
+  "about": {
+    "title": "about me",
+    "description": {
+      "one": "Originally from <strong class=\"text-mainGreen font-bold\">Dominican Republic</strong>, I have resided in USA for the past six years. High school education was completed in Texas, followed by a move to <strong class=\"text-mainGreen font-bold\">Lynn, Massachusetts</strong>, for college studies.",
+      "two": "A childhood fascination with computers sparked my passion for programming. While game development was initially explored, <strong class=\"text-mainGreen font-bold\">web development</strong> emerged as a captivating field.",
+      "three": "Graduated from North Shore Community College with a major in <strong class=\"text-mainGreen font-bold\">Computer Science</strong>. The coursework provided a strong foundation in its principles, various programming languages, and effective problem-solving techniques."
+    }
+  },
+  "timeline": {
+    "titles": {
+      "one": "Graduated from College",
+      "two": "Started College",
+      "three": "Finished High School"
+    },
+    "dates": {
+      "one": "December 2023",
+      "two": "September 2021",
+      "three": "June 2020"
+    },
+    "description": {
+      "one": "After graduating college, I immersed myself in self-study in web development. This journey honed my skills in front-end development, empowering me to create engaging web experiences more effectively.",
+      "two": "My college journey started with excitement as I delved into Computer Science, a field that always fascinated me. This ignited my passion for technology and set the stage for a fulfilling academic experience.",
+      "three": "I graduated from Dobie High School in Texas."
+    }
+  },
+  "technologies": {
+    "title": "technologies"
+  },
+  "projects": {
+    "title": "projects",
+    "urls": {
+      "code": "code",
+      "preview": "preview"
+    },
+    "description1": "My standout project use an API to fetch data on video games, offering users a seamless search experience with advanced filters. Each game has its dedicated page, providing detailed information. Furthermore, users have the option to save their favorite games within a dedicated library. This project showcases my expertise in API integration, data visualization, and user-centric design, making it a standout accomplishment.",
+    "description2": "This project uses React state management to filter a list of dishes and view detailed instructions and ingredients by clicking on each item. The filter persists across page changes, enhancing the search and selection experience with seamless and consistent access to comprehensive recipe information.",
+    "description3": "I meticulously crafted the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
+    "description4": "I created a user-friendly website for exploring country information, using a template from Frontend Mentor challenges. Users can search, filter by region, and view detailed data with ease. The site includes a toggle dark mode for enhanced accessibility. It's designed to prioritize functionality and navigation ease, utilizing Tailwind CSS, Font Awesome icons, and Flowbite React components for a modern and efficient experience."
+  }
+}

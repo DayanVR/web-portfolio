@@ -14,8 +14,18 @@ import NodeJS from "../icons/NodeJS.astro";
 
 export const TAGS = {
   LEARNING: {
-    ASTRO: { name: "Astro", icon: AstroBrand, class: 'border-orange-400 border text-orange-400 hover:bg-orange-400/25 hover:border-orange-500' },
-    TYPESCRIPT: { name: "TypeScript", icon: Typescript, class: 'border-blue-600 border text-blue-500 hover:bg-blue-600/25 hover:border-blue-600' },
+    ASTRO: {
+      name: "Astro",
+      icon: AstroBrand,
+      class:
+        "border-orange-400 border text-orange-400 hover:bg-orange-400/25 hover:border-orange-500",
+    },
+    TYPESCRIPT: {
+      name: "TypeScript",
+      icon: Typescript,
+      class:
+        "border-blue-600 border text-blue-500 hover:bg-blue-600/25 hover:border-blue-600",
+    },
   },
   TOOLS: {
     GIT: { name: "GitHub", icon: Github },
@@ -25,18 +35,31 @@ export const TAGS = {
   },
   FRONTEND: {
     NEXT: { name: "NextJS", icon: Next },
-    REACT: { name: "React", icon: React, class: 'border-blue-400 border text-blue-400 hover:bg-blue-400/25 hover:border-blue-500' },
+    REACT: {
+      name: "React",
+      icon: React,
+      class:
+        "border-blue-400 border text-blue-400 hover:bg-blue-400/25 hover:border-blue-500",
+    },
     HTML: { name: "HTML", icon: Html },
     CSS: { name: "CSS", icon: Css },
     JAVASCRIPT: { name: "JavaScript", icon: Javascript },
-    TAILWIND: { name: "Tailwind", icon: Tailwind, class: 'border-blue-300 border text-blue-300 hover:bg-blue-300/25 hover:border-blue-400' },
+    TAILWIND: {
+      name: "Tailwind",
+      icon: Tailwind,
+      class:
+        "border-blue-300 border text-blue-300 hover:bg-blue-300/25 hover:border-blue-400",
+    },
   },
   BACKEND: {
-    NODEJS: {name: "NodeJS", icon: NodeJS, class: 'border-green-400 border text-green-400 hover:bg-green-400/25 hover:border-green-400' },
+    NODEJS: {
+      name: "NodeJS",
+      icon: NodeJS,
+      class:
+        "border-green-400 border text-green-400 hover:bg-green-400/25 hover:border-green-400",
+    },
   },
 };
-
-
 
 export const extraTags = [
   "Responsive Design",

@@ -1,7 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { titles, dates, description } = t.timeline;
+---
+
 <ol
   class="relative mt-8 border-s border-gray-700 max-md:text-pretty md:text-balance"
 >
-  <li class="mb-10 ms-6">
+  <li class="ms-6 mb-10">
     <span
       class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-900 ring-8 ring-gray-900"
     >
@@ -17,21 +25,18 @@
         ></path>
       </svg>
     </span>
-    <h2
-      class="mb-1 flex items-center text-xl font-semibold text-mainGreen/85 "
-    >
-      Graduated from College
+    <h2 class="text-mainGreen/85 mb-1 flex items-center text-xl font-semibold">
+      {titles.one}
     </h2>
-    <time class="mb-2 block text-base md:text-lg xl:text-xl font-normal leading-none text-gray-300/70"
-      >December 2023</time
+    <time
+      class="mb-2 block text-base leading-none font-normal text-gray-300/70 md:text-lg xl:text-xl"
+      >{dates.one}</time
     >
-    <p class="mb-4 text-lg lg:text-xl font-normal text-white/85">
-      After graduating college, I immersed myself in self-study in web
-      development. This journey honed my skills in front-end development,
-      empowering me to create engaging web experiences more effectively.
+    <p class="mb-4 text-lg font-normal text-white/85 lg:text-xl">
+      {description.one}
     </p>
   </li>
-  <li class="mb-10 ms-6">
+  <li class="ms-6 mb-10">
     <span
       class="absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-900 ring-8 ring-gray-900"
     >
@@ -47,16 +52,15 @@
         ></path>
       </svg>
     </span>
-    <h3 class="mb-1 text-xl font-semibold text-mainGreen/85 ">
-      Started College
+    <h3 class="text-mainGreen/85 mb-1 text-xl font-semibold">
+      {titles.two}
     </h3>
-    <time class="mb-2 block text-base md:text-lg xl:text-xl font-normal leading-none text-gray-300/70"
-      >September 2021</time
+    <time
+      class="mb-2 block text-base leading-none font-normal text-gray-300/70 md:text-lg xl:text-xl"
+      >{dates.two}</time
     >
-    <p class="text-lg lg:text-xl font-normal text-white/85">
-      My college journey started with excitement as I delved into Computer
-      Science, a field that always fascinated me. This ignited my passion for
-      technology and set the stage for a fulfilling academic experience.
+    <p class="text-lg font-normal text-white/85 lg:text-xl">
+      {description.two}
     </p>
   </li>
   <li class="ms-6">
@@ -75,14 +79,15 @@
         ></path>
       </svg>
     </span>
-    <h3 class="mb-1 text-xl font-semibold text-mainGreen/85 ">
-      Finished High School
+    <h3 class="text-mainGreen/85 mb-1 text-xl font-semibold">
+      {titles.three}
     </h3>
-    <time class="mb-2 block text-base md:text-lg xl:text-xl font-normal leading-none text-gray-300/70"
-      >June 2020</time
+    <time
+      class="mb-2 block text-base leading-none font-normal text-gray-300/70 md:text-lg xl:text-xl"
+      >{dates.three}</time
     >
-    <p class="text-lg lg:text-xl font-normal text-white/85">
-      I graduated from Dobie High School in Texas.
+    <p class="text-lg font-normal text-white/85 lg:text-xl">
+      {description.three}
     </p>
   </li>
 </ol>

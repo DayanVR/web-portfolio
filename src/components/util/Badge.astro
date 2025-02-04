@@ -1,7 +1,9 @@
 ---
-  const { class: className } = Astro.props;
+const { class: className } = Astro.props;
 ---
 
-<span class={`${className} flex items-center rounded-full px-2.5 py-1.5 text-sm font-semibold`}>
+<span
+  class={`${className} flex items-center rounded-full px-2.5 py-1.5 text-sm font-semibold`}
+>
   <slot />
 </span>

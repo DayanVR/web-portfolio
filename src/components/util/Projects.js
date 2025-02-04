@@ -11,8 +11,7 @@ const astroTechArray = [astro, react, typescript];
 export const PROJECTS = [
   {
     title: "Game Finder Pro",
-    description:
-      "My standout project use an API to fetch data on video games, offering users a seamless search experience with advanced filters. Each game has its dedicated page, providing detailed information. Furthermore, users have the option to save their favorite games within a dedicated library. This project showcases my expertise in API integration, data visualization, and user-centric design, making it a standout accomplishment.",
+    descriptionKey: "description1",
     link: "https://gamefinderpro.netlify.app/",
     github: "https://github.com/DayanVR/game_finder_pro",
     image: "/projects/game-finder.webp",
@@ -20,8 +19,7 @@ export const PROJECTS = [
   },
   {
     title: "Chefs Online",
-    description:
-    "This project uses React state management to filter a list of dishes and view detailed instructions and ingredients by clicking on each item. The filter persists across page changes, enhancing the search and selection experience with seamless and consistent access to comprehensive recipe information.",
+    descriptionKey: "description2",
     link: "https://chefs-online.netlify.app/",
     github: "https://github.com/DayanVR/recipes-online",
     image: "/projects/chefs-online.webp",
@@ -29,8 +27,7 @@ export const PROJECTS = [
   },
   {
     title: "Shortener Api",
-    description:
-    "I meticulously crafted the full-page layout following the design guidelines provided by Frontend Mentor. The result is a URL shortener API with a responsive navbar and the ability to copy shortened URLs. Notably, the shortened URLs are saved locally, ensuring data persistence across sessions.",
+    descriptionKey: "description3",
     link: "https://dayanvr-shortapi.netlify.app/",
     github: "https://github.com/DayanVR/Short_API",
     image: "/projects/short-api.webp",
@@ -38,8 +35,7 @@ export const PROJECTS = [
   },
   {
     title: "Countries Api",
-    description:
-    "I created a user-friendly website for exploring country information, using a template from Frontend Mentor challenges. Users can search, filter by region, and view detailed data with ease. The site includes a toggle dark mode for enhanced accessibility. It's designed to prioritize functionality and navigation ease, utilizing Tailwind CSS, Font Awesome icons, and Flowbite React components for a modern and efficient experience.",
+    descriptionKey: "description4",
     link: "https://dayanvr-restcountriesapi.netlify.app/",
     github: "https://github.com/DayanVR/rest_country_api",
     image: "/projects/countries-api.webp",

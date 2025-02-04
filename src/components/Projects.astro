@@ -1,73 +1,79 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 import Container from "./util/Container.astro";
 import Preview from "./icons/Preview.astro";
 import Terminal from "./icons/Terminal.astro";
 import Headings from "./util/Headings.astro";
 import PROJECTS from "./util/Projects";
 import Badge from "./util/Badge.astro";
-import { TAGS } from "./constants/Constants";
+import { getTranslation } from "src/i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { urls, title } = t.projects;
+
+const translatedProjects = PROJECTS.map((project) => ({
+  ...project,
+  description: getTranslation(lang, project.descriptionKey),
+}));
+
+console.log(translatedProjects);
 ---
 
 <Container id="projects">
-  <Headings><span>projects</span>( )</Headings>
+  <Headings><span>{title}</span>( )</Headings>
 
   <div class="grid justify-items-center gap-10 md:grid-cols-2">
     {
-      PROJECTS.map((project) => (
-        <div class="">
+      translatedProjects.map((project) => (
+        <div>
           <img
-            class="h-auto w-full rounded-t-xl aspect-video"
+            class="aspect-video h-auto w-full rounded-t-xl"
             src={project.image}
             alt={`${project.title} image`}
           />
 
-          <div class="flex flex-col space-y-3 pb-4 rounded-b-xl bg-blue-950/20 p-2.5 ">
-            <div class="flex max-sm:flex-col justify-between max-sm:text-center">
-              <h1 class="max-xl:sm:text-2xl text-3xl font-medium text-mainGreen/90">
+          <div class="flex flex-col space-y-3 rounded-b-xl bg-blue-950/20 p-2.5 pb-4">
+            <div class="flex justify-between max-sm:flex-col max-sm:text-center">
+              <h1 class="text-mainGreen/90 text-3xl font-medium max-xl:sm:text-2xl">
                 {project.title}
               </h1>
-
-              {/* <div class="flex items-center max-sm:mx-auto max-sm:my-2 justify-evenly w-40 md:w-32 lg:w-40 xl:w-44">
-              {project.tags.map((tag) => (
-                  <tag.icon class="size-10"/>
-                ))}
-                </div> */}
             </div>
-            
-            <div class="flex justify-evenly [&_a]:w-fit ">
+
+            <div class="flex justify-evenly [&_a]:w-fit">
               <span class="w-full rounded-l-md py-2 text-center text-xl md:text-2xl">
                 <a
-                  class="mx-auto flex items-center gap-1.5 text-center transition hover:scale-110 hover:text-mainGreen"
+                  class="hover:text-mainGreen mx-auto flex items-center gap-1.5 text-center transition hover:scale-110"
                   target="_blank"
                   href={project.github}
                 >
                   <Terminal />
-                  Code
+                  {urls.code}
                 </a>
               </span>
-              <span class="border-x-2 border-mainGreen/55" />
+              <span class="border-mainGreen/55 border-x-2" />
               <span class="w-full rounded-r-md py-2 text-xl md:text-2xl">
                 <a
-                  class="mx-auto flex items-center gap-1.5 text-center transition hover:scale-110 hover:text-mainGreen "
+                  class="hover:text-mainGreen mx-auto flex items-center gap-1.5 text-center transition hover:scale-110"
                   target="_blank"
                   href={project.link}
                 >
                   <Preview />
-                  Preview
+                  {urls.preview}
                 </a>
               </span>
             </div>
-            <p class="mx-2 line-clamp-5 pt-1 text-pretty font-semibold">
+            <p class="mx-2 line-clamp-5 pt-1 font-semibold text-pretty">
               {project.description}
             </p>
             <div class="flex flex-wrap">
               {project.tags.map((tag) => (
-                <Badge class={`${tag.class} my-2 mx-1.5`}>
-                  <tag.icon class="size-5 mr-1.5"/>
+                <Badge class={`${tag.class} mx-1.5 my-2`}>
+                  <tag.icon class="mr-1.5 size-5" />
                   {tag.name}
                 </Badge>
-                ))}
-                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))

@@ -2,10 +2,18 @@
 import Container from "./util/Container.astro";
 import Timeline from "./Timeline.astro";
 import Headings from "./util/Headings.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const {
+  title,
+  description: { one, two, three },
+} = t.about;
 ---
 
 <Container id="about">
-  <Headings><span>about me</span>( )</Headings>
+  <Headings><span>{title}</span>( )</Headings>
   <div
     class="flex flex-col justify-between max-lg:space-y-8 lg:flex-row-reverse lg:items-center"
   >
@@ -18,30 +26,11 @@ import Headings from "./util/Headings.astro";
     </picture>
 
     <article class="space-y-4 text-lg lg:max-w-lg xl:max-w-xl xl:text-xl">
-      <p class="text-pretty text-start max-2xl:lg:mr-14">
-        Originally from <strong class="font-bold text-mainGreen"
-          >Dominican Republic</strong
-        >, I have resided in USA for the past six years. High school education
-        was completed in Texas, followed by a move to <strong
-          class="font-bold text-mainGreen">Lynn, Massachusetts</strong
-        >, for college studies.
-      </p>
+      <p class="text-start text-pretty max-2xl:lg:mr-14" set:html={one} />
 
-      <p class="text-pretty text-start max-2xl:lg:mr-14">
-        A childhood fascination with computers sparked my passion for
-        programming. While game development was initially explored, <strong
-          class="font-bold text-mainGreen">web development</strong
-        > emerged as a captivating field. This journey has deepened a commitment
-        to crafting impactful digital experiences through web development.
-      </p>
+      <p class="text-start text-pretty max-2xl:lg:mr-14" set:html={two} />
 
-      <p class="text-pretty text-start max-2xl:lg:mr-14">
-        Graduated from North Shore Community College with a major in <strong
-          class="font-bold text-mainGreen">Computer Science</strong
-        >. The coursework provided a strong foundation in computer science
-        principles, various programming languages, and effective problem-solving
-        techniques.
-      </p>
+      <p class="text-start text-pretty max-2xl:lg:mr-14" set:html={three} />
     </article>
   </div>
 </Container>

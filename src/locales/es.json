@@ -1,0 +1,41 @@
+{
+  "about": {
+    "title": "sobre mí",
+    "description": {
+      "one": "Originalmente de <strong class=\"text-mainGreen font-bold\">República Dominicana</strong>, he residido en los Estados Unidos durante los últimos seis años. La educación secundaria se completó en Texas, seguido de una mudanza a <strong class=\"text-mainGreen font-bold\">Lynn, Massachusetts</strong>, para estudios universitarios.",
+      "two": "Una fascinación de la infancia por las computadoras despertó mi pasión por la programación. Aunque inicialmente se exploró el desarrollo de videojuegos, <strong class=\"text-mainGreen font-bold\">el desarrollo web</strong> surgió como un campo cautivador.",
+      "three": "Graduado de North Shore Community College con una especialización en <strong class=\"text-mainGreen font-bold\">Ciencias de la Computación</strong>. El plan de estudios proporcionó una base sólida en sus principios, diversos lenguajes de programación y técnicas efectivas de resolución de problemas."
+    }
+  },
+  "timeline": {
+    "titles": {
+      "one": "Graduado de la universidad",
+      "two": "Comencé la universidad",
+      "three": "Terminé la escuela secundaria"
+    },
+    "dates": {
+      "one": "Diciembre 2023",
+      "two": "Septiembre 2021",
+      "three": "Junio 2020"
+    },
+    "description": {
+      "one": "Después de graduarme de la universidad, me sumergí en el autoestudio en desarrollo web. Este viaje perfeccionó mis habilidades en desarrollo front-end, permitiéndome crear experiencias web atractivas de manera más efectiva.",
+      "two": "Mi experiencia universitaria comenzó con emoción cuando me adentré en Ciencias de la Computación, un campo que siempre me fascinó. Esto encendió mi pasión por la tecnología y preparó el escenario para una experiencia académica enriquecedora.",
+      "three": "Me gradué de Dobie High School en Texas."
+    }
+  },
+  "technologies": {
+    "title": "tecnologías"
+  },
+  "projects": {
+    "title": "proyectos",
+    "urls": {
+      "code": "código",
+      "preview": "vista previa"
+    },
+    "description1": "Mi proyecto destacado utiliza una API para obtener datos sobre videojuegos, ofreciendo a los usuarios una experiencia de búsqueda fluida con filtros avanzados. Cada juego tiene su página dedicada, proporcionando información detallada. Además, los usuarios tienen la opción de guardar sus juegos favoritos en una biblioteca dedicada. Este proyecto demuestra mi experiencia en integración de APIs, visualización de datos y diseño centrado en el usuario, convirtiéndolo en un logro destacado.",
+    "description2": "Este proyecto utiliza la gestión de estado de React para filtrar una lista de platos y ver instrucciones e ingredientes detallados al hacer clic en cada elemento. El filtro persiste a través de los cambios de página, mejorando la experiencia de búsqueda y selección con un acceso fluido y consistente a información completa de las recetas.",
+    "description3": "Creé meticulosamente el diseño de la página completa siguiendo las pautas de diseño proporcionadas por Frontend Mentor. El resultado es una API de acortador de URLs con una barra de navegación responsive y la capacidad de copiar URLs acortadas. Cabe destacar que las URLs acortadas se guardan localmente, asegurando la persistencia de los datos a lo largo de las sesiones.",
+    "description4": "Creé un sitio web fácil de usar para explorar información de países, utilizando una plantilla de los desafíos de Frontend Mentor. Los usuarios pueden buscar, filtrar por región y ver datos detallados con facilidad. El sitio incluye un interruptor para el modo oscuro, mejorando la accesibilidad. Está diseñado para priorizar la funcionalidad y la facilidad de navegación, utilizando Tailwind CSS, íconos de Font Awesome y componentes de Flowbite React para una experiencia moderna y eficiente."
+  }
+}

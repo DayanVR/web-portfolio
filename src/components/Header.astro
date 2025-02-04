@@ -3,25 +3,28 @@ import HeaderLinks from "./util/HeaderLinks.astro";
 import Linkedin from "./icons/Linkedin.astro";
 import Github from "./icons/Github.astro";
 import Email from "./icons/Email.astro";
+import LanguagePicker from "./LanguagePicker.astro";
 ---
 
-<header class="md:fixed z-50 md:left-2/4 top-3 md:w-screen md:-translate-x-2/4 lg:top-6">
-  <div class="bg-black bg-opacity-20 backdrop-blur-lg">
+<header
+  class="top-3 z-50 md:fixed md:left-2/4 md:w-screen md:-translate-x-2/4 lg:top-6"
+>
+  <div class="bg-opacity-20 bg-black backdrop-blur-lg">
     <div
-      class="mx-auto -mt-6 flex justify-between max-md:flex-col p-3 md:items-center lg:px-6 md:py-6 xl:px-32 2xl:max-w-7xl 2xl:px-0"
+      class="mx-auto -mt-6 flex justify-between p-3 max-md:flex-col md:items-center md:py-6 lg:px-6 xl:px-32 2xl:max-w-7xl 2xl:px-0"
     >
       <a
         href="#self-intro"
-        class="text-2xl font-semibold text-mainGreen max-md:py-3 max-md:text-center sm:text-3xl"
+        class="text-mainGreen text-2xl font-semibold max-md:py-3 max-md:text-center sm:text-3xl"
       >
         <span class="text-white opacity-60">Dayan</span>VR
       </a>
-
+      <LanguagePicker />
       <nav
         class="flex w-full justify-evenly max-md:items-center max-md:justify-evenly"
       >
         <div
-          class="flex text-xl font-medium max-md:flex-col max-md:items-center gap-2 md:gap-0.5 lg:text-2xl 2xl:gap-3"
+          class="flex gap-2 text-xl font-medium max-md:flex-col max-md:items-center md:gap-0.5 lg:text-2xl 2xl:gap-3"
         >
           <HeaderLinks href="#projects"> Projects </HeaderLinks>
           <HeaderLinks href="#skills"> Skills </HeaderLinks>
@@ -29,7 +32,7 @@ import Email from "./icons/Email.astro";
         </div>
 
         <div
-          class="flex text-xl font-medium max-md:flex-col max-md:items-center gap-2 md:gap-0.5 lg:text-2xl 2xl:gap-3"
+          class="flex gap-2 text-xl font-medium max-md:flex-col max-md:items-center md:gap-0.5 lg:text-2xl 2xl:gap-3"
         >
           <HeaderLinks
             target="_blank"
@@ -44,7 +47,7 @@ import Email from "./icons/Email.astro";
           </HeaderLinks>
           <HeaderLinks
             target="_blank"
-            href="mailto:dayanvillavicencio13@gmail.com"
+            href="mailto:dayanvillavicencio14@gmail.com"
             class="bg-gradient-to-br from-green-400 to-blue-600 p-1 hover:bg-gradient-to-bl focus:ring-green-200 dark:focus:ring-green-800"
           >
             <Email name="icon" />
