@@ -13,6 +13,6 @@ const languages = {
 const { nextLang, flag } = languages[lang] || languages.en;
 ---
 
-<a href={translatedPath("/", nextLang)} class="my-1">
-  <img src={flag} class="size-5" alt={`${lang} icon flag`} />
+<a href={translatedPath("/", nextLang)}>
+  <img src={flag} class="size-4 lg:size-5" alt={`${lang} icon flag`} />
 </a>
