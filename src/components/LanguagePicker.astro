@@ -1,0 +1,18 @@
+---
+// import { languages } from "../i18n/ui";
+import { getLangFromUrl, useTranslatedPath } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const translatedPath = useTranslatedPath(lang);
+
+const languages = {
+  en: { nextLang: "es", flag: "/assets/flags/spain.webp" },
+  es: { nextLang: "en", flag: "/assets/flags/united-states.webp" },
+};
+
+const { nextLang, flag } = languages[lang] || languages.en;
+---
+
+<a href={translatedPath("/", nextLang)}>
+  <img src={flag} class="size-4 lg:size-5" alt={`${lang} icon flag`} />
+</a>

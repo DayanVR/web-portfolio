@@ -2,22 +2,29 @@
 import Container from "./util/Container.astro";
 import { TAGS, extraTags } from "./constants/Constants";
 import Headings from "./util/Headings.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const frontendArray = Object.values(TAGS.FRONTEND);
 const toolsArray = Object.values(TAGS.TOOLS);
 const learningArray = Object.values(TAGS.LEARNING);
 const extraTagsArray = Object.values(extraTags);
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { title } = t.technologies;
 ---
 
 <Container id="skills">
-  <Headings class="max-sm:text-4xl"><span>tecnologies</span>( )</Headings>
+  <Headings class="max-sm:text-4xl"><span>{title}</span>( )</Headings>
 
-  <div class="-mx-2 md:-mx-12 xl:-mx-0 flex justify-around max-xl:flex-col max-xl:space-y-10">
+  <div
+    class="-mx-2 flex justify-around max-xl:flex-col max-xl:space-y-10 md:-mx-12 xl:-mx-0"
+  >
     <section
       class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
-        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+        class="[&_span]:text-mainGreen mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl"
       >
         <span>frontend</span>[ ]
       </h2>
@@ -41,7 +48,7 @@ const extraTagsArray = Object.values(extraTags);
       class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
-        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+        class="[&_span]:text-mainGreen mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl"
       >
         <span>tools</span>[ ]
       </h2>
@@ -64,7 +71,7 @@ const extraTagsArray = Object.values(extraTags);
       class="h-fit space-y-10 rounded-xl bg-gradient-to-r from-blue-800/20 to-black to-70% py-6 sm:mx-32 md:mx-56 xl:mx-2 xl:w-72 2xl:w-80 [&_h1]:text-center"
     >
       <h2
-        class="mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl [&_span]:text-mainGreen"
+        class="[&_span]:text-mainGreen mb-14 text-center text-3xl sm:text-4xl 2xl:text-5xl"
       >
         <span>learning</span>[ ]
       </h2>
