@@ -30,8 +30,8 @@
   "projects": {
     "title": "projects",
     "urls": {
-      "code": "code",
-      "preview": "preview"
+      "code": "Code",
+      "preview": "Preview"
     },
     "description1": "My standout project use an API to fetch data on video games, offering users a seamless search experience with advanced filters. Each game has its dedicated page, providing detailed information. Furthermore, users have the option to save their favorite games within a dedicated library. This project showcases my expertise in API integration, data visualization, and user-centric design, making it a standout accomplishment.",
     "description2": "This project uses React state management to filter a list of dishes and view detailed instructions and ingredients by clicking on each item. The filter persists across page changes, enhancing the search and selection experience with seamless and consistent access to comprehensive recipe information.",

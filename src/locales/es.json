@@ -30,8 +30,8 @@
   "projects": {
     "title": "proyectos",
     "urls": {
-      "code": "código",
-      "preview": "vista previa"
+      "code": "Código",
+      "preview": "Vista previa"
     },
     "description1": "Mi proyecto destacado utiliza una API para obtener datos sobre videojuegos, ofreciendo a los usuarios una experiencia de búsqueda fluida con filtros avanzados. Cada juego tiene su página dedicada, proporcionando información detallada. Además, los usuarios tienen la opción de guardar sus juegos favoritos en una biblioteca dedicada. Este proyecto demuestra mi experiencia en integración de APIs, visualización de datos y diseño centrado en el usuario, convirtiéndolo en un logro destacado.",
     "description2": "Este proyecto utiliza la gestión de estado de React para filtrar una lista de platos y ver instrucciones e ingredientes detallados al hacer clic en cada elemento. El filtro persiste a través de los cambios de página, mejorando la experiencia de búsqueda y selección con un acceso fluido y consistente a información completa de las recetas.",
