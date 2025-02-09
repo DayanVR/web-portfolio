@@ -11,9 +11,8 @@ const languages = {
 };
 
 const { nextLang, flag } = languages[lang] || languages.en;
-console.log(nextLang);
 ---
 
-<a href={translatedPath("/", nextLang)}>
+<a href={translatedPath("/", nextLang)} class="my-1">
   <img src={flag} class="size-5" alt={`${lang} icon flag`} />
 </a>
