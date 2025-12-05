@@ -12,7 +12,7 @@ export const PROJECTS = [
   {
     title: "Game Finder Pro",
     descriptionKey: "description1",
-    link: "https://gamefinderpro.netlify.app/",
+    link: "https://game-finder-pro-client.vercel.app",
     github: "https://github.com/DayanVR/game_finder_pro",
     image: "/projects/game-finder.webp",
     tags: techArrayBack,
@@ -20,7 +20,7 @@ export const PROJECTS = [
   {
     title: "Chefs Online",
     descriptionKey: "description2",
-    link: "https://chefs-online.netlify.app/",
+    link: "https://chefs-online.netlify.app",
     github: "https://github.com/DayanVR/recipes-online",
     image: "/projects/chefs-online.webp",
     tags: astroTechArray,
@@ -28,7 +28,7 @@ export const PROJECTS = [
   {
     title: "Shortener Api",
     descriptionKey: "description3",
-    link: "https://dayanvr-shortapi.netlify.app/",
+    link: "https://dayanvr-shortapi.netlify.app",
     github: "https://github.com/DayanVR/Short_API",
     image: "/projects/short-api.webp",
     tags: techArray,
@@ -36,7 +36,7 @@ export const PROJECTS = [
   {
     title: "Countries Api",
     descriptionKey: "description4",
-    link: "https://dayanvr-restcountriesapi.netlify.app/",
+    link: "https://dayanvr-restcountriesapi.netlify.app",
     github: "https://github.com/DayanVR/rest_country_api",
     image: "/projects/countries-api.webp",
     tags: techArray,
