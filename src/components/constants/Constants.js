@@ -1,28 +1,30 @@
-import React from "../icons/React.astro";
-import AstroBrand from "../icons/AstroBrand.astro";
-import Css from "../icons/Css.astro";
-import Tailwind from "../icons/Tailwind.astro";
-import Html from "../icons/Html.astro";
-import Javascript from "../icons/Javascript.astro";
-import Github from "../icons/Github.astro";
-import Git from "../icons/Git.astro";
-import Typescript from "../icons/Typescript.astro";
-import Next from "../icons/Next.astro";
-import Npm from "../icons/Npm.astro";
-import Vscode from "../icons/Vscode.astro";
-import NodeJS from "../icons/NodeJS.astro";
+import React from "@components/icons/React.astro";
+import AstroBrand from "@components/icons/AstroBrand.astro";
+import Css from "@components/icons/Css.astro";
+import Tailwind from "@components/icons/Tailwind.astro";
+import Html from "@components/icons/Html.astro";
+import Javascript from "@components/icons/Javascript.astro";
+import PostgresSQL from "@components/icons/PostgesSQL.astro";
+import Github from "@components/icons/Github.astro";
+import Git from "@components/icons/Git.astro";
+import Typescript from "@components/icons/Typescript.astro";
+import Next from "@components/icons/Next.astro";
+import Npm from "@components/icons/Npm.astro";
+import Vscode from "@components/icons/Vscode.astro";
+import NodeJS from "@components/icons/NodeJS.astro";
+import Pnpm from "@components/icons/Pnpm.astro";
 
 export const TAGS = {
   LEARNING: {
-    ASTRO: {
-      name: "Astro",
-      icon: AstroBrand,
-      class:
-        "border-orange-400 border text-orange-400 hover:bg-orange-400/25 hover:border-orange-500",
-    },
     TYPESCRIPT: {
       name: "TypeScript",
       icon: Typescript,
+      class:
+        "border-blue-600 border text-blue-500 hover:bg-blue-600/25 hover:border-blue-600",
+    },
+    POSTGRESQL: {
+      name: "PostgreSQL",
+      icon: PostgresSQL,
       class:
         "border-blue-600 border text-blue-500 hover:bg-blue-600/25 hover:border-blue-600",
     },
@@ -30,11 +32,17 @@ export const TAGS = {
   TOOLS: {
     GIT: { name: "GitHub", icon: Github },
     GITHUB: { name: "Git", icon: Git },
-    NPM: { name: "Npm", icon: Npm },
+    PNPM: { name: "Pnpm", icon: Pnpm },
     VSCODE: { name: "VSCode", icon: Vscode },
   },
   FRONTEND: {
-    NEXT: { name: "NextJS", icon: Next },
+    NEXT: {
+      name: "NextJS",
+      icon: Next,
+      class:
+        "border-white/40 border text-white hover:bg-black/60 hover:border-black",
+    },
+    JAVASCRIPT: { name: "JavaScript", icon: Javascript },
     REACT: {
       name: "React",
       icon: React,
@@ -42,8 +50,12 @@ export const TAGS = {
         "border-blue-400 border text-blue-400 hover:bg-blue-400/25 hover:border-blue-500",
     },
     HTML: { name: "HTML", icon: Html },
-    CSS: { name: "CSS", icon: Css },
-    JAVASCRIPT: { name: "JavaScript", icon: Javascript },
+    ASTRO: {
+      name: "Astro",
+      icon: AstroBrand,
+      class:
+        "border-orange-400 border text-orange-400 hover:bg-orange-400/25 hover:border-orange-500",
+    },
     TAILWIND: {
       name: "Tailwind",
       icon: Tailwind,

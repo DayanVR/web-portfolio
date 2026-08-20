@@ -1,11 +1,11 @@
 import { TAGS } from "../constants/Constants";
 
 const { FRONTEND, BACKEND, LEARNING } = TAGS;
-const { TAILWIND: tailwind, REACT: react, ASTRO: astro } = FRONTEND;
+const { TAILWIND: tailwind, REACT: react, ASTRO: astro, NEXT: nextjs } = FRONTEND;
 const { NODEJS: nodejs } = BACKEND;
-const { TYPESCRIPT: typescript } = LEARNING;
+const { TYPESCRIPT: typescript, POSTGRESQL: postgresql } = LEARNING;
 const techArray = [tailwind, react];
-const techArrayBack = [tailwind, react, nodejs];
+const techArrayBack = [nextjs, postgresql, nodejs, typescript, tailwind];
 const astroTechArray = [astro, react, typescript];
 
 export const PROJECTS = [
