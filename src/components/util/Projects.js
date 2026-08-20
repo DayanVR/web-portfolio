@@ -1,9 +1,9 @@
 import { TAGS } from "../constants/Constants";
 
 const { FRONTEND, BACKEND, LEARNING } = TAGS;
-const { TAILWIND: tailwind, REACT: react } = FRONTEND;
+const { TAILWIND: tailwind, REACT: react, ASTRO: astro } = FRONTEND;
 const { NODEJS: nodejs } = BACKEND;
-const { ASTRO: astro, TYPESCRIPT: typescript } = LEARNING;
+const { TYPESCRIPT: typescript } = LEARNING;
 const techArray = [tailwind, react];
 const techArrayBack = [tailwind, react, nodejs];
 const astroTechArray = [astro, react, typescript];
@@ -12,7 +12,7 @@ export const PROJECTS = [
   {
     title: "Game Finder Pro",
     descriptionKey: "description1",
-    link: "https://game-finder-pro-client.vercel.app",
+    link: "https://game-finder-pro-v2.vercel.app",
     github: "https://github.com/DayanVR/game_finder_pro",
     image: "/projects/game-finder.webp",
     tags: techArrayBack,
